@@ -82,6 +82,51 @@ Datos[Datos$FECHA == "May-20",]
 superlista <- list(A,B,C,D,E,FECHA, DF = Datos, INDICE, GRUPO)
 superlista
 
+#FOR Loops
+for(i in 1:10){
+  print(i^2)
+}
+
+for(Valores in 1:10){
+  print(Valores^2)
+}
+
+#Condicional IF
+if( 2+2 == 4){
+  print("Menos Mal")
+}
+
+if( 2+2 == 148.24){
+  print("R, tenemos un problema")
+}
+
+#Función ifelse
+ifelse(2+2 == 4, yes = "Joya", no = "Error")
+?ifelse
+
+#Funciones
+suma <- function(valor1, valor2) {
+  valor1+valor2
+}
+suma(5,6)
+
+funcion_prueba <- function(parametro1,parametro2) {
+  paste(parametro1, parametro2, sep = " <--> ")
+}
+funcion_prueba(parametro1 = "A ver", parametro2 = "Qué pasa")
+
+Otra_funcion_prueba <- function(parametro1 ,parametro2 = "String default") {
+  paste(parametro1, parametro2, sep = " <--> ")
+  
+}
+Otra_funcion_prueba(parametro1 = "Valor 1")
+
+#Funciones anónimas
+(function(x) x*2)(10)
+
+
+
+
 
 
 
