@@ -10,7 +10,7 @@ library(kableExtra)
 library(GGally)
 
 #Cargando datos de encuesta
-encuesta <- read_csv("encuesta_sueldos_sysarmy_1s2020.csv")
+encuesta <- read_csv("../Clase3_19-Sep/encuesta_sueldos_sysarmy_1s2020.csv")
 encuesta %>%
   glimpse()
 
@@ -268,7 +268,7 @@ encuesta_ds_final %>% ggplot(., aes(x = anos_en_la_empresa_actual, y = salario_n
 
 
 
-
+write.csv(encuesta_ds_final,"../Clase4_26-Sep/encuesta_sueldos_sysarmy_limpia.csv", row.names = TRUE)
 
 
 
